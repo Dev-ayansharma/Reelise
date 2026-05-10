@@ -6,9 +6,7 @@ import Link from "next/link";
 
 export function Header() {
     const { data: session } = useSession();
-   
-
-    const handlesignout = async () => {
+   const handlesignout = async () => {
         try {
             await signOut({ callbackUrl: "/" });
         } catch (error) {
